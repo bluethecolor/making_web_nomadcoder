@@ -1,0 +1,33 @@
+<!--유저가 id를 입력하고 제출하면, 이떄 form을 없애보자!!-->
+<!--1. HTML의 FORM 요소 자체를 없애기-->
+<!--2. CSS를 이용해서 숨기자-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
+</head>
+
+<body> 
+    <form id="login-form">
+        <input 
+        required maxlength="15" 
+        type="text" 
+        placeholder="what is your name?">
+        <button>Log In</button>
+    </form>
+    <!--이제 할 일은 로그인 form은 숨기고 h1 화면에 표시-->
+    <!--다만 h1에 표시할 텍스트가 있을 때만 표시되도록 할거임.-->
+    <h1 id="greeting" class="hidden"></h1>
+     <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+

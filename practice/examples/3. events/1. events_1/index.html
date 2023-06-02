@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum</title>
+</head>
+
+
+<!-- Js에는 value를 기억해주는 쉬운 방법이 있다. user이 이름을 기억하는 것처럼-->
+<!-- 하지만 모든 것은 HTML에서 시작되어야 한다!-->
+<!-- 우선 HTML을 작성한 다음 거기있는 element들을 끌어오는 것이다.-->
+<!-- 그런 다음 JS에서 이런저런 작업들을 해주는 것이지!-->
+
+<body>
+    <!-- 로그인 생성 전에 div를 먼저 만들어주자!! input/button은 세트로 여러개 생길 수 있기에!-->
+
+    <!-- 그러나 여기에선 input을 div대신 form 안에 넣어준다.-->
+    <!-- 그래야 id 입력 후 Enter를 눌렀을 때 자동으로 새로고침되며 form이 submit되기 떄문에-->
+    <!-- div면 로그인 버튼 직접 눌러야 하고 새로고침도 되지 않는다!!.-->
+    <form id="login-form">
+        <input 
+        required maxlength="15" 
+        type="text" 
+        placeholder="what is your name?">
+        <!--value='bluethecolor' 이런 식으로 추가해서 input에 value에 아이디값 적으면 이 아이디가 미리 입력되있게 할 수 있음-->
+        <button>Log In</button>
+    </form>
+     <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
